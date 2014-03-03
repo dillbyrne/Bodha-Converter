@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/relativeLayout"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/bgimg">
+
+	<ScrollView
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:fillViewport="true"
+		android:layout_alignParentTop="true">
+	    
+	    <LinearLayout
+			android:id="@+id/linear" 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:focusable="true"
+			android:focusableInTouchMode="true">
+	
+		    
+		   	<Spinner 
+				android:id="@+id/input" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:prompt="@string/input"
+				android:entries="@array/all"
+				/>
+		    
+		    
+	            
+		    <EditText
+	            android:hint="@string/in"
+	            android:inputType="number"
+	            android:digits="0123456789"
+	            android:id="@+id/inboxdec"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:visibility="invisible"
+	            />
+	            
+	            
+	            
+		    <EditText
+	            android:hint="@string/in"
+	            android:digits="0123456789abcdefABCDEF"
+	            android:id="@+id/inboxhex"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:visibility="gone"
+	            />
+	            
+	            
+	            
+		    <EditText
+	            android:hint="@string/in"
+	            android:inputType="number"
+	            android:digits="01234567"
+	            android:id="@+id/inboxoct"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:visibility="gone"
+	            
+	            />                        
+	       
+	            
+		    <EditText
+	            android:hint="@string/in"
+	            android:inputType="number"
+	         	android:digits="01"
+	            android:id="@+id/inboxbin"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:visibility="gone"
+	            
+	            />
+	            
+	            
+	            
+		    <EditText
+	            android:hint="@string/in"
+	            android:id="@+id/inboxasc"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:maxLength="3"
+	            android:visibility="gone"
+	            />            
+	            
+		   	<Spinner 
+				android:id="@+id/output" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:prompt="@string/output"
+				android:entries="@array/nondec"
+				/>
+		
+		    <EditText
+		        android:hint="@string/out"
+		        android:inputType="textMultiLine"
+		        android:id="@+id/outbox"
+		        android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+		         />
+		
+			<Button
+				android:id="@+id/convert"
+				android:text="@string/convert"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"/>
+			<Button
+				android:id="@+id/lookup"
+				android:text="@string/lookup"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"/>      	
+		                
+		 </LinearLayout> 
+	    
+	</ScrollView>	
+	
+</RelativeLayout>

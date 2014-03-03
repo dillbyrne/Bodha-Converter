@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+	
+<RelativeLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:id="@+id/relativeLayout"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="@drawable/bgimg"
+
+>
+	
+	<ScrollView 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+	android:layout_alignParentTop="true"
+	android:fadingEdge="vertical"
+	android:scrollbarAlwaysDrawVerticalTrack="true"
+    >
+    
+	<LinearLayout android:id="@+id/LinearLayout02"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+<TextView
+        android:id="@+id/tabletext"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:isScrollContainer="true"
+        android:drawablePadding="5dp"
+        android:linksClickable="true"
+        android:fadingEdgeLength="25dp"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="outsideOverlay"
+        android:bufferType="spannable"/>
+  
+</LinearLayout>
+	
+</ScrollView>	
+
+
+ 
+</RelativeLayout>

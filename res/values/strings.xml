@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bodha Converter</string>
+    
+    <string name="dec">Decimal</string>
+    <string name="bin">Binary</string>
+    <string name="hex">Hex</string>
+    <string name="oct">Octal</string>
+    <string name="asc">Ascii</string>
+    <string name="input">From</string>
+    <string name="output">To</string>
+    <string name="in">Input</string>
+    <string name="out">Output</string>
+    
+    
+    
+    <string name="convert">Convert</string>
+    <string name="lookup">Look up Tables</string>
+    
+        
+    
+    
+    	<!-- String array for the input options-->
+	<string-array name="all">
+		<item name="dec" type="string">@string/dec</item>
+		<item name="oct" type="string">@string/oct</item>
+		<item name="hex" type="string">@string/hex</item>
+		<item name="bin" type="string">@string/bin</item>
+	    <item name="asc" type="string">@string/asc</item>
+	</string-array>
+	
+	<string-array name="nondec">
+		<item name="oct" type="string">@string/oct</item>
+		<item name="hex" type="string">@string/hex</item>
+		<item name="bin" type="string">@string/bin</item>
+	    <item name="asc" type="string">@string/asc</item>
+	</string-array>
+	
+	<string-array name="nonhex">
+		<item name="dec" type="string">@string/dec</item>
+		<item name="oct" type="string">@string/oct</item>
+		<item name="bin" type="string">@string/bin</item>
+	    <item name="asc" type="string">@string/asc</item>
+	</string-array>
+	
+	<string-array name="nonoct">
+		<item name="dec" type="string">@string/dec</item>
+		<item name="hex" type="string">@string/hex</item>
+		<item name="bin" type="string">@string/bin</item>
+	    <item name="asc" type="string">@string/asc</item>
+	</string-array>
+    
+	<string-array name="nonbin">
+		<item name="dec" type="string">@string/dec</item>
+		<item name="oct" type="string">@string/oct</item>
+		<item name="hex" type="string">@string/hex</item>
+	    <item name="asc" type="string">@string/asc</item>
+	</string-array>
+	
+	<string-array name="nonasc">
+		<item name="dec" type="string">@string/dec</item>
+		<item name="oct" type="string">@string/oct</item>
+		<item name="hex" type="string">@string/hex</item>
+		<item name="bin" type="string">@string/bin</item>
+	</string-array>
+    
+
+</resources>
