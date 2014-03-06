@@ -117,8 +117,6 @@ public class ConverterActivity extends Activity implements OnClickListener , OnI
 			
 			try{
 			
-				//TODO validate the input
-				//TODO limit the input field
 				
 			//don't allow empty strings
 			if(input.length() == 0){
@@ -257,7 +255,6 @@ public class ConverterActivity extends Activity implements OnClickListener , OnI
 			
 			try{
 			
-			//TODO validate the input
 			
 			//don't allow empty strings
 			if(input.length() == 0){
@@ -376,7 +373,6 @@ public class ConverterActivity extends Activity implements OnClickListener , OnI
 		// if ascii input
 		if(v == convert && inSpin.equals("Ascii")){
 			
-			//TODO validate the input
 			
 			//don't allow empty strings
 			if(input.length() == 0){
@@ -597,13 +593,13 @@ public class ConverterActivity extends Activity implements OnClickListener , OnI
 
 	@Override
 	public void onNothingSelected(AdapterView<?> arg0) {
-		// TODO Auto-generated method stub
+		// We can ignore this
 		
 	}
 	
 	  
 	  //decimal to ascii
-	  public String decToAsc(int dec){
+	  private String decToAsc(int dec){
 		  
 		  String asc; 
 		  
@@ -1003,7 +999,7 @@ public class ConverterActivity extends Activity implements OnClickListener , OnI
 	 
 	  //Ascii to decimal
 	  
-	  public int ascToDec(String str){
+	  private int ascToDec(String str){
 		   
 		  
 		if(str.equals("NUL") || str.equals("nul"))

@@ -27,8 +27,7 @@ public final class R {
         public static final int white=0x7f050003;
     }
     public static final class drawable {
-        public static final int bgimg=0x7f020000;
-        public static final int icon=0x7f020001;
+        public static final int icon=0x7f020000;
     }
     public static final class id {
         public static final int LinearLayout02=0x7f08000c;
@@ -43,7 +42,7 @@ public final class R {
         public static final int lookup=0x7f08000b;
         public static final int outbox=0x7f080009;
         public static final int output=0x7f080008;
-        public static final int relativeLayout=0x7f080000;
+        public static final int scrollView=0x7f080000;
         public static final int tabletext=0x7f08000d;
     }
     public static final class layout {

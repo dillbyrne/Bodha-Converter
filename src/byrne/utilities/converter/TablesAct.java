@@ -1,9 +1,9 @@
 package byrne.utilities.converter;
 
-import java.io.DataInputStream;
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
-
+import java.io.InputStreamReader;
 
 
 import android.app.Activity;
@@ -36,12 +36,12 @@ public class TablesAct extends Activity {
     
     public String inputStreamToString(InputStream is) throws IOException {
         StringBuffer sBuffer = new StringBuffer();
-        DataInputStream dis = new DataInputStream(is);
+        BufferedReader br = new BufferedReader(new InputStreamReader(is));
         String strLine = null;
-        while ((strLine = dis.readLine()) != null) {
+        while ((strLine = br.readLine()) != null) {
             sBuffer.append(strLine + "\n");
         }
-        dis.close();
+        br.close();
         is.close();
         return sBuffer.toString();
     }
